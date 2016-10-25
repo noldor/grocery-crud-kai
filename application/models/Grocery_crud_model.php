@@ -1,33 +1,22 @@
 <?php
 /**
- * PHP grocery CRUD.
+ * Grocery CRUD Kai.
+ *
+ * A Codeigniter library that creates a CRUD automatically with just few lines of code.
+ *
+ * Grocery CRUD Kai: Copyright (C) 2016  TAKEKOSHI Akishige.
+ * Grocery CRUD (original): Copyright (C) 2010 - 2014  John Skoumbourdis.
  *
  * LICENSE
  *
- * Grocery CRUD is released with dual licensing, using the GPL v3 (license-gpl3.txt) and the MIT license (license-mit.txt).
- * You don't have to do anything special to choose one license or the other and you don't have to notify anyone which license you are using.
- * Please see the corresponding license file for details of these licenses.
+ * Grocery CRUD Kai is under the MIT license (license-mit.txt).
  * You are free to use, modify and distribute this software, but all copyright information must remain.
- *
- * @copyright  	Copyright (c) 2010 through 2012, John Skoumbourdis
- * @license    	https://github.com/scoumbourdis/grocery-crud/blob/master/license-grocery-crud.txt
- *
- * @version    	1.4.2
- *
- * @author     	John Skoumbourdis <scoumbourdisj@gmail.com>
  */
 
 // ------------------------------------------------------------------------
 
 /**
  * Grocery CRUD Model.
- *
- *
- * @author     	John Skoumbourdis <scoumbourdisj@gmail.com>
- *
- * @version    	1.5.6
- *
- * @link		http://www.grocerycrud.com/documentation
  */
 class Grocery_crud_model extends CI_Model
 {
