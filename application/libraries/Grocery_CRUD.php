@@ -816,7 +816,8 @@ class grocery_CRUD_Model_Driver extends grocery_CRUD_Field_Types
         $validation_result = $this->db_insert_validation();
 
         if ($validation_result->success) {
-            $post_data = $state_info->unwrapped_data;
+            //$post_data = $state_info->unwrapped_data;
+            $post_data = get_instance()->input->post();     // バリデーションの整形機能を利用するよう改変
 
             if ($this->config->xss_clean) {
                 $post_data = $this->filter_data_from_xss($post_data);
@@ -910,8 +911,9 @@ class grocery_CRUD_Model_Driver extends grocery_CRUD_Field_Types
         $edit_fields = $this->get_edit_fields();
 
         if ($validation_result->success) {
-            $post_data        = $state_info->unwrapped_data;
-            $primary_key      = $state_info->primary_key;
+            //$post_data        = $state_info->unwrapped_data;
+            $post_data   = get_instance()->input->post();     // バリデーションの整形機能を利用するよう改変
+            $primary_key = $state_info->primary_key;
 
             if ($this->config->xss_clean) {
                 $post_data = $this->filter_data_from_xss($post_data);
